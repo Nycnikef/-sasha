@@ -1,0 +1,78 @@
+/* Базові налаштування */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("изображение_2026-10-30_164336902.png");
+    Background-size:cover;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-screen{
+    Background-color: white ;
+    width: 600px;
+    height: 370px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hide{
+    display: none;
+}
+.correct{
+    background-color: green;
+    border-width: 1px;
+border-style: solid;
+border-color: green;
+}
+.wrong{
+   background-color:red;
+}
+#start-btn,
+#restart-btn {
+    width: 100%;
+}
+
+#answers-container {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* две колонки равной ширины */
+  gap: 10px; /* расстояние между кнопками */
+
+}
+
+.answer-btn {
+    background-color: #2196F3;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+button {
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+h1{
+    Color: #2321ad;
+    font-size: 25px;
+}
+#result-screen{
+    color: white;
+}
